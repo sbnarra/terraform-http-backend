@@ -1,0 +1,12 @@
+services:
+  terraform-http-backend:
+    image: sbnarra/terraform-http-backend
+    ports:
+      - "9944:9944"
+    environment:
+      PORT: 9944
+      DATA_DIR: ./data
+      AUTH_USERNAME: user
+      AUTH_PASSWORD: pass
+    volumes:
+      - ./data:/data

@@ -1,0 +1,9 @@
+testdata
+build
+dist
+data
+
+.terraform
+.terraform.lock.hcl
+errored.tfstate
+terraform.tfstate
